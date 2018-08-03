@@ -1,2 +1,0 @@
-class P < ApplicationRecord
-end
