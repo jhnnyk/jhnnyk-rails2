@@ -60,3 +60,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# From Scotch.io tutorial: https://scotch.io/tutorials/build-a-blog-with-ruby-on-rails-part-1
+gem 'simple_form'
+gem 'bootstrap-sass'
