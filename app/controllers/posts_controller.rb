@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
-  before_action :find_post, only: [:edit, :update, :show, :delete]
+  before_action :find_post, only: [:edit, :update, :show, :destroy]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    if @post.destroy
+    if @post.delete
       flash[:notice] = "Successfully deleted post!"
       redirect_to posts_path
     else
