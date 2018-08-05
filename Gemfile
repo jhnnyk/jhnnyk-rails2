@@ -68,3 +68,5 @@ gem 'ckeditor'
 
 # From Scotch.io tutorial: https://scotch.io/tutorials/build-a-blog-with-ruby-on-rails-part-2
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
